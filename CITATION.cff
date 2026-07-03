@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Non-homologous isofunctional enzyme candidates in neurologically relevant helminths
+message: If you use these data, tables, FASTA files, scripts, figures, database, or web resource, please cite the associated article.
+authors:
+  - family-names: Pereira
+    given-names: Leandro de Mattos
+  - family-names: Graeff-Teixeira
+    given-names: Carlos
+  - family-names: Morassutti
+    given-names: Alessandra Loureiro
+year: 2026
+repository-code: https://github.com/DatabiomicsAI/NISE_targets_meningitis_parasites
+url: https://databiomicsai.github.io/NISE_targets_meningitis_parasites/
