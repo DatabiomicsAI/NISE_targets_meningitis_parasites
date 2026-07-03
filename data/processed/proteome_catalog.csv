@@ -1,0 +1,9 @@
+dataset,organism,analysis_layer,accession_or_project,local_fasta_file,protein_sequence_count,public_database_url,included_in_matrix
+aac,Angiostrongylus cantonensis,genome proteome,PRJEB493 / WBPS2,angiostrongylus_cantonensis.PRJEB493.WBPS2.protein_60.fa,11367,https://parasite.wormbase.org/Angiostrongylus_cantonensis_prjeb493/Info/Index,yes
+anc,Angiostrongylus cantonensis,transcriptome-derived translated proteins,local translated transcriptome; PubMed 33729108,unica_more_60_cd-hit.fasta,24868,https://pubmed.ncbi.nlm.nih.gov/33729108/,yes
+ecg,Echinococcus granulosus,genome proteome,GCA_000469785.1 / EGRAN001,GCA_000469785.1_EGRAN001_protein_Echinococus_gran.faa_60.faa,9921,https://www.ncbi.nlm.nih.gov/assembly/GCA_000469785.1/,yes
+ecm,Echinococcus multilocularis,genome proteome,GCA_000469725.2 / ASM46972v2,GCA_000469725.2_ASM46972v2_protein_Echinococcus_multilocularis_60.faa,10450,https://www.ncbi.nlm.nih.gov/assembly/GCA_000469725.2/,yes
+tas,Taenia solium,genome proteome,PRJNA170813 / WBPS3,taenia_solium.PRJNA170813.WBPS3.protein.fa_60.fa,12194,https://parasite.wormbase.org/Taenia_solium_prjna170813/Info/Index,yes
+onv,Onchocerca volvulus,genome proteome,PRJEB513 / WBPS3,onchocerca_volvulus.PRJEB513.WBPS3.protein_60.fa,11783,https://parasite.wormbase.org/Onchocerca_volvulus_prjeb513/Info/Index,yes
+tox,Toxocara canis,adult proteome,GCA_000803305.1 / Toxocara canis adult r1.0,GCA_000803305.1_Toxocara_canis_adult_r1.0_protein_60.faa,18456,https://www.ncbi.nlm.nih.gov/assembly/GCA_000803305.1/,yes
+aco,Angiostrongylus costaricensis,"provided FASTA, not included in final AnEnPi matrix",local FASTA provided,angiostrongylus_costaricensis_60.fasta,9281,,no: no corresponding AnEnPi comparison table was provided
