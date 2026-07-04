@@ -12,19 +12,19 @@ Leandro de Mattos Pereira, Carlos Graeff-Teixeira and Alessandra Loureiro Morass
 
 Contact: info@databiomics.com; mattosmp@gmail.com; almorassutti@gmail.com
 
-## Public page
+## Public pages
 
-After GitHub Pages is enabled from `main` and `/docs`, the page should be available at:
+Repository page:
 
 https://databiomicsai.github.io/NISE_targets_meningitis_parasites/
 
-For integration into the Databiomics website, copy the same contents into the website repository under:
+Databiomics article page:
 
-`/NISE_targets_meningitis_parasites/`
+https://databiomics.com/New_articles/NISE_targets_meningitis_parasites/
 
-Expected Databiomics URL:
+Catalog page:
 
-https://databiomics.com/NISE_targets_meningitis_parasites/
+https://databiomics.com/New_articles/
 
 ## Repository organization
 
@@ -36,25 +36,24 @@ data/processed/                  Processed CSV tables
 data/sequences/                  FASTA files and FASTA index
 figures/svg/                     Publication and web SVG figures
 scripts/anenpi_python/           Python parser for AnEnPi-like outputs
-streamlit_app/                   Interactive Streamlit app
+app/                             Interactive Streamlit app
 ```
 
 ## How to update the resource
 
 1. Add new processed CSV files under `data/processed/`.
 2. Add FASTA files under `data/sequences/` or `data/sequences/by_ec/`.
-3. Update `data/processed/fasta_index.csv` with organism, protein ID, EC, source file and download path.
-4. Rebuild the static page with `python scripts/build_static_site.py`.
-5. Rebuild the SQLite database with `python streamlit_app/build_sqlite_db.py`.
+3. Update `data/sequences/fasta_index.csv` with organism, protein ID, EC, source file and download path.
+4. Rebuild the static page.
+5. Rebuild the SQLite database with `python database/build_database.py`.
 6. Validate the database with `python database/validate_database.py`.
 7. Commit the updated page, tables, FASTA, scripts and README.
 
 ## Streamlit app
 
 ```bash
-python -m pip install -r streamlit_app/requirements.txt
-python streamlit_app/build_sqlite_db.py
-streamlit run streamlit_app/app.py
+python -m pip install -r app/requirements.txt
+streamlit run app/app.py
 ```
 
 ## How to cite
