@@ -1,0 +1,30 @@
+parasite,intervention_point,intervention_window,biological_goal,figure_source,evidence_or_annotation_note
+Angiostrongylus cantonensis,I1,Exposure prevention / food safety,"Prevent ingestion of contaminated mollusks, paratenic hosts or vegetables",Figure_3_part_I; A_cantonensis_life_cycle_interventions.png,"food safety, mollusk/vegetable contamination, L3 exposure"
+Angiostrongylus cantonensis,I2,Inhibit larval invasion through the gut,Block intestinal penetration by L3 larvae,Figure_3_part_I; A_cantonensis_life_cycle_interventions.png,"gut invasion, larval penetration"
+Angiostrongylus cantonensis,I3,Block migration and CNS entry,Prevent hematogenous dissemination and entry into CNS,Figure_3_part_I; A_cantonensis_life_cycle_interventions.png,"migration, blood dissemination, CNS entry"
+Angiostrongylus cantonensis,I4,Reduce CNS persistence and inflammation-aware treatment,Limit larval persistence and eosinophilic inflammation,Figure_3_part_I; A_cantonensis_life_cycle_interventions.png,"CNS persistence, eosinophilic meningitis"
+Angiostrongylus costaricensis,I1,Exposure prevention / food safety,Prevent ingestion of L3 in mollusks or contaminated produce,Figure_3_part_I; A_costaricensis_life_cycle_interventions.png,"food safety, mollusk contamination"
+Angiostrongylus costaricensis,I2,Inhibit intestinal invasion,Block larval hatching or intestinal penetration,Figure_3_part_I; A_costaricensis_life_cycle_interventions.png,intestinal invasion
+Angiostrongylus costaricensis,I3,Block mesenteric migration,Prevent migration to mesenteric vessels,Figure_3_part_I; A_costaricensis_life_cycle_interventions.png,mesenteric migration
+Angiostrongylus costaricensis,I4,Reduce tissue persistence and pathology,"Limit survival, tissue damage and inflammation",Figure_3_part_I; A_costaricensis_life_cycle_interventions.png,abdominal angiostrongyliasis
+Echinococcus granulosus,I1,Interrupt dog-livestock-environment transmission,Reduce egg contamination in environment and livestock exposure,Figure_3_part_I; E_granulosus_life_cycle_interventions.png,"dog-livestock cycle, environmental eggs"
+Echinococcus granulosus,I2,Inhibit oncosphere invasion,Block intestinal invasion by oncosphere,Figure_3_part_I; E_granulosus_life_cycle_interventions.png,oncosphere invasion
+Echinococcus granulosus,I3,Block hydatid cyst establishment,Prevent early cyst establishment in liver/lung,Figure_3_part_I; E_granulosus_life_cycle_interventions.png,hydatid cyst establishment
+Echinococcus granulosus,I4,Reduce persistence and dissemination,Limit cyst persistence and rare CNS dissemination,Figure_3_part_I; E_granulosus_life_cycle_interventions.png,"cyst persistence, neuro-echinococcosis"
+Echinococcus multilocularis,I1,Exposure prevention,Reduce contact with eggs from fox/canid fecal contamination,Figure_3_part_I; E_multilocularis_life_cycle_interventions.png,egg exposure prevention
+Echinococcus multilocularis,I2,Inhibit early invasion,Block oncosphere penetration and early establishment,Figure_3_part_I; E_multilocularis_life_cycle_interventions.png,early invasion
+Echinococcus multilocularis,I3,Block metacestode establishment,Prevent early lesion establishment and growth,Figure_3_part_I; E_multilocularis_life_cycle_interventions.png,metacestode establishment
+Echinococcus multilocularis,I4,Reduce persistence and dissemination,Limit chronic infection and spread to liver/lung/brain,Figure_3_part_I; E_multilocularis_life_cycle_interventions.png,"alveolar echinococcosis, dissemination"
+Onchocerca volvulus,I1,Prevent vector bites,Block blackfly transmission of L3 larvae,Figure_4_part_II; O_volvulus_life_cycle_interventions.png,vector bite prevention
+Onchocerca volvulus,I2,Inhibit larval maturation in vector,Prevent development to infective L3 stage in blackfly,Figure_4_part_II; O_volvulus_life_cycle_interventions.png,vector-stage development
+Onchocerca volvulus,I3,Reduce adult worm persistence,Target adult subcutaneous worms,Figure_4_part_II; O_volvulus_life_cycle_interventions.png,adult worm persistence
+Onchocerca volvulus,I4,Reduce microfilarial burden,Lower microfilariae in skin and eyes,Figure_4_part_II; O_volvulus_life_cycle_interventions.png,"microfilariae, ocular disease"
+Taenia solium,I1,Sanitation and exposure prevention,Prevent environmental contamination and human egg exposure,Figure_4_part_II; T_solium_life_cycle_interventions.png,"sanitation, eggs/proglottids"
+Taenia solium,I2,Pork inspection / food safety,Prevent taeniasis by avoiding undercooked pork with cysticerci,Figure_4_part_II; T_solium_life_cycle_interventions.png,"pork inspection, cysticerci"
+Taenia solium,I3,Inhibit oncosphere invasion,Block intestinal penetration after egg ingestion,Figure_4_part_II; T_solium_life_cycle_interventions.png,oncosphere invasion
+Taenia solium,I4,Block dissemination to CNS,Limit hematogenous dissemination and CNS cysticercosis,Figure_4_part_II; T_solium_life_cycle_interventions.png,"neurocysticercosis, CNS dissemination"
+Taenia solium,I5,Reduce cyst persistence with inflammation-aware management,Reduce persistence while avoiding inflammatory worsening,Figure_4_part_II; T_solium_life_cycle_interventions.png,"cyst persistence, inflammation-aware treatment"
+Toxocara canis,I1,Prevent environmental exposure,"Hygiene, deworming and feces management to reduce embryonated egg exposure",Figure_4_part_II; T_canis_life_cycle_interventions.png,environmental egg exposure
+Toxocara canis,I2,Inhibit intestinal hatching and invasion,Block larval release and early intestinal invasion,Figure_4_part_II; T_canis_life_cycle_interventions.png,"hatching, invasion"
+Toxocara canis,I3,Block somatic migration,"Limit portal/lymphatic migration to liver, lung, eye and CNS",Figure_4_part_II; T_canis_life_cycle_interventions.png,somatic migration
+Toxocara canis,I4,Reduce ocular/neural persistence,Limit persistence in ocular or neural tissues,Figure_4_part_II; T_canis_life_cycle_interventions.png,"neurotoxocariasis, ocular toxocariasis"
