@@ -1,0 +1,5 @@
+file,EC,enzyme_name,scope,download_path,notes
+EC_2_7_4_9.fasta,2.7.4.9,dTMP kinase,core recurrent EC,data/sequences/by_ec/EC_2_7_4_9.fasta,Uploaded representative full EC FASTA
+EC_3_5_4_4.fasta,3.5.4.4,Adenosine deaminase,core recurrent EC,data/sequences/by_ec/EC_3_5_4_4.fasta,Available in final local package; upload pending if repository file-size/tool limits allow
+EC_4_4_1_1.fasta,4.4.1.1,Cystathionine gamma-lyase,core recurrent EC,data/sequences/by_ec/EC_4_4_1_1.fasta,Available in final local package; upload pending if repository file-size/tool limits allow
+all_available_candidate_sequences.fasta,all,multi-EC candidate sequence file,all available candidate sequences,data/sequences/all_available_candidate_sequences.fasta,Available in final local package; very large text FASTA
