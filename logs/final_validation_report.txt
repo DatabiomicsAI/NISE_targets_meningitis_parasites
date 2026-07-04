@@ -1,0 +1,18 @@
+FINAL VALIDATION REPORT
+Repository URL: https://github.com/DatabiomicsAI/NISE_targets_meningitis_parasites
+GitHub Pages URL: https://databiomicsai.github.io/NISE_targets_meningitis_parasites/
+Databiomics integration target: https://databiomics.com/modulo/New_articles/NISE_targets_meningitis_parasites/
+
+PASS: Parasites and Vectors manuscript package generated in local release.
+PASS: Preprint package generated in local release.
+PASS: Workflow figure preserved and exported in local release.
+PASS: Figure 2 hypothesis framework generated.
+PASS: Supplementary figures S1-S5 generated.
+PASS: GitHub repository links updated.
+PASS: GitHub Pages page includes Hypothesis framework.
+PASS: GitHub Pages page includes Manuscript versions.
+PASS: Streamlit app source included.
+PASS: Processed CSV tables included.
+PASS: FASTA index and representative FASTA included.
+
+NOTE: This connector can upload UTF-8 repository files. Binary DOCX, PDF, XLSX, SQLite and PNG assets are in the final downloadable package and should be pushed with Git LFS, GitHub web upload, or local git.
