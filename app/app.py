@@ -7,10 +7,12 @@ st.set_page_config(page_title="NISE targets", layout="wide")
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "processed"
 FASTA_DIR = ROOT / "data" / "sequences" / "by_ec"
+FIG_DIR = ROOT / "figures" / "svg"
 TABLES = {
     "Proteome catalog": "proteome_catalog.csv",
     "Core ECs": "core_all_parasites.csv",
     "Intergenomic summary": "intergenomic_summary.csv",
+    "Hypothesis table": "diagnostic_and_migration_hypotheses.csv",
 }
 
 st.title("Non-homologous isofunctional enzyme candidates in neurologically relevant helminths")
@@ -24,9 +26,60 @@ with st.sidebar:
     st.write("mattosmp@gmail.com")
     st.write("almorassutti@gmail.com")
 
-tabs = st.tabs(list(TABLES.keys()) + ["FASTA by EC", "Documentation"])
-for tab, (label, filename) in zip(tabs[:-2], TABLES.items()):
-    with tab:
+labels = [
+    "Parasites & Vectors manuscript",
+    "Preprint version",
+    "Hypothesis framework",
+    "Diagnostic EC strategy",
+    "CNS tropism inhibition",
+    "Parasite exit or relocation hypothesis",
+    "Supplementary conceptual figures",
+    "Tables",
+    "FASTA by EC",
+    "Documentation",
+]
+tabs = st.tabs(labels)
+
+with tabs[0]:
+    st.subheader("Parasites & Vectors manuscript")
+    st.write("Clean submission and review-copy files are included in the final release package. The repository hosts source tables, figures and scripts.")
+    st.markdown("Repository: https://github.com/DatabiomicsAI/NISE_targets_meningitis_parasites")
+
+with tabs[1]:
+    st.subheader("Preprint version")
+    st.write("The preprint version is generated from the same scientific content without editorial comments.")
+
+with tabs[2]:
+    st.subheader("Hypothesis framework")
+    fig = FIG_DIR / "Figure_2_EC_diagnostic_and_CNS_tropism_hypothesis.svg"
+    if fig.exists():
+        st.image(str(fig))
+    st.write("This figure separates EC-based diagnostic specificity from non-lethal intervention hypotheses targeting migration, tropism, persistence and cycle modulation.")
+
+with tabs[3]:
+    st.subheader("Diagnostic EC strategy")
+    st.write("Complete ECs specific to one parasite among the seven analyzed datasets are treated as candidate molecular diagnostic markers. These require independent sample validation.")
+
+with tabs[4]:
+    st.subheader("CNS tropism inhibition")
+    st.write("Candidate enzymes linked to migration, host-interface remodeling, motility or tissue adaptation are treated as hypotheses for reducing CNS entry or persistence.")
+
+with tabs[5]:
+    st.subheader("Parasite exit or relocation hypothesis")
+    st.write("This is a cautious, hypothesis-only framework for testing whether pathway modulation can change localization or reduce damage in sensitive tissues. It requires direct experimental validation.")
+
+with tabs[6]:
+    st.subheader("Supplementary conceptual figures")
+    for name in ["Supplementary_Figure_S1.svg", "Supplementary_Figure_S2.svg", "Supplementary_Figure_S3.svg", "Supplementary_Figure_S4.svg", "Supplementary_Figure_S5.svg"]:
+        p = FIG_DIR / name
+        if p.exists():
+            st.markdown(f"### {name}")
+            st.image(str(p))
+            st.download_button("Download SVG", p.read_text().encode(), file_name=name, key=name)
+
+with tabs[7]:
+    for label, filename in TABLES.items():
+        st.subheader(label)
         path = DATA / filename
         if path.exists():
             df = pd.read_csv(path)
@@ -34,12 +87,12 @@ for tab, (label, filename) in zip(tabs[:-2], TABLES.items()):
             if q:
                 mask = df.astype(str).apply(lambda col: col.str.contains(q, case=False, na=False)).any(axis=1)
                 df = df[mask]
-            st.dataframe(df, use_container_width=True, height=600)
-            st.download_button("Download CSV", df.to_csv(index=False).encode(), file_name=filename)
+            st.dataframe(df, use_container_width=True, height=400)
+            st.download_button("Download CSV", df.to_csv(index=False).encode(), file_name=filename, key="dl_" + filename)
         else:
             st.warning(f"Missing table: {path}")
 
-with tabs[-2]:
+with tabs[8]:
     ec = st.text_input("EC number, e.g. 2.7.4.9")
     if ec:
         fname = "EC_" + ec.replace(".", "_") + ".fasta"
@@ -51,9 +104,9 @@ with tabs[-2]:
         else:
             st.info("FASTA not available in repository for this EC yet.")
 
-with tabs[-1]:
+with tabs[9]:
     st.markdown("""
     Add CSV tables to `data/processed/` and FASTA files to `data/sequences/by_ec/`.
-    Restart the Streamlit app to browse the new data. The static GitHub Pages site
-    is available under `docs/index.html`.
+    Rebuild the SQLite database with `python database/build_database.py`.
+    The static GitHub Pages site is available under `docs/index.html`.
     """)
