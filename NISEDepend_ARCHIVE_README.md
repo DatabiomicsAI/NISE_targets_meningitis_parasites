@@ -1,0 +1,1 @@
+NISEDepend v1.0.0 package was uploaded under tools/NISEDepend_archive. ZIP SHA256 56fb434ecdb248adc2f9292236ecf08efc26143b85b4a3fba45e10e47020c7ac.
